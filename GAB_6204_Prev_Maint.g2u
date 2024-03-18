@@ -1,0 +1,2478 @@
+Program.Sub.ScreenSU.Start
+Gui.Form1..create
+Gui.Form1..caption("Preventive Maintenance")
+Gui.Form1..size(10380,6715)
+Gui.Form1..minx(0)
+Gui.Form1..miny(0)
+Gui.Form1..position(0,295)
+Gui.Form1..event(UnLoad,Unload)
+Gui.Form1..fontsize(7)
+Gui.Form1..forecolor(0)
+Gui.Form1..BackColor(-2147483633)
+Gui.Form1..maxbutton(False)
+Gui.Form1..mousepointer(0)
+Gui.Form1..sizeable(False)
+Gui.Form1.ddlist0.create(dropdownlist)
+Gui.Form1.ddlist0.size(2490,300)
+Gui.Form1.ddlist0.position(315,1005)
+Gui.Form1.ddlist0.fontsize(7)
+Gui.Form1.ddlist0.defaultvalue("")
+Gui.Form1.ddlist0.Event(Change,Pop_Machine)
+Gui.Form1.ddlist1.create(dropdownlist)
+Gui.Form1.ddlist1.size(2490,300)
+Gui.Form1.ddlist1.position(3180,1005)
+Gui.Form1.ddlist1.fontsize(7)
+Gui.Form1.ddlist1.defaultvalue("")
+Gui.Form1.ddlist1.tabstop(True)
+Gui.Form1.ddlist1.tabindex(10)
+Gui.Form1.ddlist1.Event(Change,Pop_Freq)
+Gui.Form1.ddlist2.create(dropdownlist)
+Gui.Form1.ddlist2.size(2490,300)
+Gui.Form1.ddlist2.position(5895,1005)
+Gui.Form1.ddlist2.fontsize(7)
+Gui.Form1.ddlist2.defaultvalue("")
+Gui.Form1.ddlist2.tabstop(True)
+Gui.Form1.ddlist2.tabindex(11)
+Gui.Form1.ddlist2.Event(Change,Pop_Chk_Boxes)
+Gui.Form1.lbl15.create(label,"Comments",True,4875,300,1,1785,3675,True,2,Arial,7,-2147483633,0)
+Gui.Form1.lbl15.defaultvalue("")
+Gui.Form1.cmdbutton3.create(button)
+Gui.Form1.cmdbutton3.caption("Process")
+Gui.Form1.cmdbutton3.size(1125,345)
+Gui.Form1.cmdbutton3.position(8715,3225)
+Gui.Form1.cmdbutton3.fontsize(7)
+Gui.Form1.cmdbutton3.event(Click,Cmd_Process)
+Gui.Form1.cmdbutton3.defaultvalue("")
+Gui.Form1.cmdbutton3.tabstop(True)
+Gui.Form1.cmdbutton3.tabindex(24)
+Gui.Form1.cmdbutton3.Anchor(9)
+Gui.Form1.checkbox1.create(checkbox)
+Gui.Form1.checkbox1.visible(False)
+Gui.Form1.checkbox1.size(2485,355)
+Gui.Form1.checkbox1.position(310,1645)
+Gui.Form1.checkbox1.fontsize(7)
+Gui.Form1.checkbox1.defaultvalue("")
+Gui.Form1.checkbox1.tabstop(True)
+Gui.Form1.checkbox1.tabindex(25)
+Gui.Form1.checkbox2.create(checkbox)
+Gui.Form1.checkbox2.visible(False)
+Gui.Form1.checkbox2.size(2485,355)
+Gui.Form1.checkbox2.position(310,2140)
+Gui.Form1.checkbox2.fontsize(7)
+Gui.Form1.checkbox2.defaultvalue("")
+Gui.Form1.checkbox2.tabstop(True)
+Gui.Form1.checkbox2.tabindex(35)
+Gui.Form1.checkbox3.create(checkbox)
+Gui.Form1.checkbox3.visible(False)
+Gui.Form1.checkbox3.size(2485,355)
+Gui.Form1.checkbox3.position(310,2650)
+Gui.Form1.checkbox3.fontsize(7)
+Gui.Form1.checkbox3.defaultvalue("")
+Gui.Form1.checkbox3.tabstop(True)
+Gui.Form1.checkbox3.tabindex(45)
+Gui.Form1.checkbox4.create(checkbox)
+Gui.Form1.checkbox4.visible(False)
+Gui.Form1.checkbox4.size(2485,355)
+Gui.Form1.checkbox4.position(310,3145)
+Gui.Form1.checkbox4.fontsize(7)
+Gui.Form1.checkbox4.defaultvalue("")
+Gui.Form1.checkbox4.tabstop(True)
+Gui.Form1.checkbox4.tabindex(55)
+Gui.Form1.checkbox5.create(checkbox)
+Gui.Form1.checkbox5.visible(False)
+Gui.Form1.checkbox5.size(2485,355)
+Gui.Form1.checkbox5.position(3175,1645)
+Gui.Form1.checkbox5.fontsize(7)
+Gui.Form1.checkbox5.defaultvalue("")
+Gui.Form1.checkbox5.tabstop(True)
+Gui.Form1.checkbox5.tabindex(65)
+Gui.Form1.checkbox6.create(checkbox)
+Gui.Form1.checkbox6.visible(False)
+Gui.Form1.checkbox6.size(2485,355)
+Gui.Form1.checkbox6.position(3175,2140)
+Gui.Form1.checkbox6.fontsize(7)
+Gui.Form1.checkbox6.defaultvalue("")
+Gui.Form1.checkbox6.tabstop(True)
+Gui.Form1.checkbox6.tabindex(75)
+Gui.Form1.checkbox7.create(checkbox)
+Gui.Form1.checkbox7.visible(False)
+Gui.Form1.checkbox7.size(2485,355)
+Gui.Form1.checkbox7.position(3175,2650)
+Gui.Form1.checkbox7.fontsize(7)
+Gui.Form1.checkbox7.defaultvalue("")
+Gui.Form1.checkbox7.tabstop(True)
+Gui.Form1.checkbox7.tabindex(85)
+Gui.Form1.checkbox8.create(checkbox)
+Gui.Form1.checkbox8.visible(False)
+Gui.Form1.checkbox8.size(2485,355)
+Gui.Form1.checkbox8.position(3175,3145)
+Gui.Form1.checkbox8.fontsize(7)
+Gui.Form1.checkbox8.defaultvalue("")
+Gui.Form1.checkbox8.tabstop(True)
+Gui.Form1.checkbox8.tabindex(95)
+Gui.Form1.checkbox9.create(checkbox)
+Gui.Form1.checkbox9.visible(False)
+Gui.Form1.checkbox9.size(2485,355)
+Gui.Form1.checkbox9.position(5890,1645)
+Gui.Form1.checkbox9.fontsize(7)
+Gui.Form1.checkbox9.defaultvalue("")
+Gui.Form1.checkbox9.tabstop(True)
+Gui.Form1.checkbox9.tabindex(105)
+Gui.Form1.checkbox10.create(checkbox)
+Gui.Form1.checkbox10.visible(False)
+Gui.Form1.checkbox10.size(2485,355)
+Gui.Form1.checkbox10.position(5890,2140)
+Gui.Form1.checkbox10.fontsize(7)
+Gui.Form1.checkbox10.defaultvalue("")
+Gui.Form1.checkbox10.tabstop(True)
+Gui.Form1.checkbox10.tabindex(115)
+Gui.Form1.checkbox11.create(checkbox)
+Gui.Form1.checkbox11.visible(False)
+Gui.Form1.checkbox11.size(2485,355)
+Gui.Form1.checkbox11.position(5890,2650)
+Gui.Form1.checkbox11.fontsize(7)
+Gui.Form1.checkbox11.defaultvalue("")
+Gui.Form1.checkbox11.tabstop(True)
+Gui.Form1.checkbox11.tabindex(125)
+Gui.Form1.checkbox12.create(checkbox)
+Gui.Form1.checkbox12.visible(False)
+Gui.Form1.checkbox12.size(2485,355)
+Gui.Form1.checkbox12.position(5890,3145)
+Gui.Form1.checkbox12.fontsize(7)
+Gui.Form1.checkbox12.defaultvalue("")
+Gui.Form1.checkbox12.tabstop(True)
+Gui.Form1.checkbox12.tabindex(135)
+Gui.Form1.cmdbutton1.create(button)
+Gui.Form1.cmdbutton1.caption("Select All")
+Gui.Form1.cmdbutton1.size(1125,345)
+Gui.Form1.cmdbutton1.position(8715,1650)
+Gui.Form1.cmdbutton1.fontsize(7)
+Gui.Form1.cmdbutton1.event(Click,Cmd_SelectAll)
+Gui.Form1.cmdbutton1.defaultvalue("")
+Gui.Form1.cmdbutton1.tabstop(True)
+Gui.Form1.cmdbutton1.tabindex(137)
+Gui.Form1.cmdbutton1.Anchor(9)
+Gui.Form1.cmdbutton2.create(button)
+Gui.Form1.cmdbutton2.caption("Clear All")
+Gui.Form1.cmdbutton2.size(1125,345)
+Gui.Form1.cmdbutton2.position(8715,2145)
+Gui.Form1.cmdbutton2.fontsize(7)
+Gui.Form1.cmdbutton2.event(Click,Cmd_ClearAll)
+Gui.Form1.cmdbutton2.defaultvalue("")
+Gui.Form1.cmdbutton2.tabstop(True)
+Gui.Form1.cmdbutton2.tabindex(147)
+Gui.Form1.cmdbutton2.Anchor(9)
+Gui.Form1.mltextbox22.create(textboxm)
+Gui.Form1.mltextbox22.size(8265,2130)
+Gui.Form1.mltextbox22.position(210,3990)
+Gui.Form1.mltextbox22.borderstyle(1)
+Gui.Form1.mltextbox22.fontsize(7)
+Gui.Form1.mltextbox22.numericonly(0)
+Gui.Form1.mltextbox22.BackColor(16777215)
+Gui.Form1.mltextbox22.defaultvalue("")
+Gui.Form1.mltextbox22.tabstop(True)
+Gui.Form1.mltextbox22.tabindex(148)
+Gui.Form1.mltextbox22.Anchor(14)
+Gui.Form1.ddlist4.create(dropdownlist)
+Gui.Form1.ddlist4.size(2490,300)
+Gui.Form1.ddlist4.position(315,315)
+Gui.Form1.ddlist4.fontsize(7)
+Gui.Form1.ddlist4.defaultvalue("Machinist")
+Gui.Form1.chk_NoUse.create(checkbox)
+Gui.Form1.chk_NoUse.caption("Machine Not Used")
+Gui.Form1.chk_NoUse.size(2460,255)
+Gui.Form1.chk_NoUse.position(5895,360)
+Gui.Form1.chk_NoUse.fontsize(7)
+Gui.Form1.chk_NoUse.event(Click,ChkBx_NoUse)
+Gui.Form1.chk_NoUse.defaultvalue("")
+Gui.Form1.datepicker1.create(datepicker)
+Gui.Form1.datepicker1.size(2490,285)
+Gui.Form1.datepicker1.position(3180,315)
+Gui.Form1.datepicker1.defaultvalue("")
+Gui.Form1.lbl1.Create(Label,"Type",True,1935,255,0,345,105,True,0,"Arial",8,-2147483633,0)
+Gui.Form1.lbl2.Create(Label,"Department",True,1935,255,0,345,780,True,0,"Arial",8,-2147483633,0)
+Gui.Form1.lbl3.Create(Label,"Machine",True,1935,255,0,3210,780,True,0,"Arial",8,-2147483633,0)
+Gui.Form1.lbl4.Create(Label,"Frequency",True,1935,255,0,5925,765,True,0,"Arial",8,-2147483633,0)
+Gui.Form2..create
+Gui.Form2..caption("Preventative Maintenance Setup")
+Gui.Form2..size(7455,5430)
+Gui.Form2..minx(0)
+Gui.Form2..miny(0)
+Gui.Form2..position(0,0)
+Gui.Form2..event(UnLoad,Unload)
+Gui.Form2..alwaysontop(True)
+Gui.Form2..forecolor(0)
+Gui.Form2..BackColor(-2147483633)
+Gui.Form2..mousepointer(0)
+Gui.Form2.ddlist1.create(dropdownlist)
+Gui.Form2.ddlist1.size(1755,330)
+Gui.Form2.ddlist1.position(90,510)
+Gui.Form2.ddlist1.event(Click,Pop_Depart)
+Gui.Form2.ddlist1.defaultvalue("")
+Gui.Form2.ddlist1.controlgroup(1)
+Gui.Form2.ddlist2.create(dropdownlist)
+Gui.Form2.ddlist2.size(1755,330)
+Gui.Form2.ddlist2.position(1860,510)
+Gui.Form2.ddlist2.defaultvalue("")
+Gui.Form2.ddlist2.controlgroup(1)
+Gui.Form2.ddlist2.Event(Change,Pop_Mach_M)
+Gui.Form2.ddlist3.create(dropdownlist)
+Gui.Form2.ddlist3.size(1755,330)
+Gui.Form2.ddlist3.position(3615,510)
+Gui.Form2.ddlist3.defaultvalue("")
+Gui.Form2.ddlist3.controlgroup(1)
+Gui.Form2.ddlist3.Event(Change,Pop_Freq_M)
+Gui.Form2.ddlist4.create(dropdownlist)
+Gui.Form2.ddlist4.size(1755,330)
+Gui.Form2.ddlist4.position(5385,510)
+Gui.Form2.ddlist4.defaultvalue("")
+Gui.Form2.ddlist4.controlgroup(1)
+Gui.Form2.ddlist4.Event(Change,data_Load)
+Gui.Form2.lbl1.create(label,"Type",True,1755,255,1,95,200,True,2,Arial,8,-2147483633,0)
+Gui.Form2.lbl1.fontstyle(True,False,False,False,False)
+Gui.Form2.lbl1.defaultvalue("")
+Gui.Form2.lbl2.create(label,"Department",True,1755,255,1,1865,200,True,2,Arial,8,-2147483633,0)
+Gui.Form2.lbl2.fontstyle(True,False,False,False,False)
+Gui.Form2.lbl2.defaultvalue("")
+Gui.Form2.lbl3.create(label,"Machine",True,1755,255,1,3620,200,True,2,Arial,8,-2147483633,0)
+Gui.Form2.lbl3.fontstyle(True,False,False,False,False)
+Gui.Form2.lbl3.defaultvalue("")
+Gui.Form2.lbl4.create(label,"Frequency",True,1755,255,1,5390,200,True,2,Arial,8,-2147483633,0)
+Gui.Form2.lbl4.fontstyle(True,False,False,False,False)
+Gui.Form2.lbl4.defaultvalue("")
+Gui.Form2.cmd1.create(button)
+Gui.Form2.cmd1.caption("Submit")
+Gui.Form2.cmd1.size(1260,375)
+Gui.Form2.cmd1.position(5805,4290)
+Gui.Form2.cmd1.event(Click,cmd_Ok)
+Gui.Form2.cmd1.defaultvalue("")
+Gui.Form2.cmd1.Anchor(10)
+Gui.Form2.cmd2.create(button)
+Gui.Form2.cmd2.caption("Clear")
+Gui.Form2.cmd2.size(1260,375)
+Gui.Form2.cmd2.position(4305,4290)
+Gui.Form2.cmd2.event(Click,cmd_Clear)
+Gui.Form2.cmd2.defaultvalue("")
+Gui.Form2.cmd2.Anchor(10)
+Gui.Form2.flexgrid1.create(gsflexgrid)
+Gui.Form2.flexgrid1.size(7005,3180)
+Gui.Form2.flexgrid1.position(105,1005)
+Gui.Form2.flexgrid1.Anchor(15)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+'Variable.uGlobal.uRecords.Declare("uRecords")
+'Variable.UDT.uRecords.Define("Machine",Long)
+'Variable.UDT.uRecords.Define("Frequency",String)
+'Variable.UDT.uRecords.Define("Task",String)
+'Variable.UDT.uRecords.Define("Complete",String)
+'Variable.UDT.uRecords.Define("Date",Date)
+'Variable.UDT.uRecords.Define("Time",String)
+'Variable.UDT.uRecords.Define("Comment",Boolean)
+Variable.UDT.uRecords.Define("Flag_NotUsed",String)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sIcon.Declare(String)
+	V.Global.Machine.Declare(String)
+	V.Global.Time.Declare(String)	
+	
+	Function.Intrinsic.Debug.InvokeDebugger
+	Function.Intrinsic.Debug.Stop
+	
+	F.Intrinsic.String.Build("{0}\gss2.ico",V.Caller.ArtDir,V.Local.sIcon)	
+	
+	'GUI Populate Hook 15710
+	F.Intrinsic.Control.If(V.Caller.Hook,=,15710)
+		'000021 = Script 3 button
+		V.Passed.000021.Set("PM")
+		F.Intrinsic.Control.End
+		
+	' GUI Script 3 Hook 15780		
+	F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,15780)
+	
+		Gui.Form1.chk_NoUse.Visible(False)
+		Gui.Form1..Show(True)
+		Gui.Form1..Icon(V.Local.sIcon)
+		Gui.Form1.datepicker1.Visible(False)
+		Gui.Form1.datepicker1.Value(V.Ambient.Date)
+		Gui.Form1.cmdbutton1.Enabled(True)
+		Gui.Form1.cmdbutton2.Enabled(True)
+	
+		F.Intrinsic.Control.CallSub("Group")
+		F.Intrinsic.Control.CallSub("Pop_dept")
+	'	F.Intrinsic.Control.CallSub(Reset)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.If(V.Caller.Switches.UCase,=,"M")
+			F.Intrinsic.Control.CallSub("Pop_type")
+			
+			Gui.Form2.flexgrid1.SetProperty("enter",1)
+			Gui.Form2.flexgrid1.Rows(13)
+			Gui.Form2.flexgrid1.Cols(1)
+			Gui.Form2.flexgrid1.FixedRows(1)
+			Gui.Form2.flexgrid1.TextMatrix(0,0,"Task")
+			Gui.Form2.flexgrid1.ColWidth(0,7000)
+			Gui.Form2.flexgrid1.BuildStyle(1,0,"Format","Maxlength",50)
+			Gui.Form2.flexgrid1.BuildStyle(1,0,"Format","Alignment",2)
+			Gui.Form2.flexgrid1.Fixedrows(1)
+			
+			Gui.Form2..Icon(V.Local.sIcon)
+			Gui.Form2..Show
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.Pop_Dept.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	
+	Gui.Form1.ddlist0.ListIndex(-1)
+	Gui.Form1.ddlist0.ClearItems
+	Gui.Form1.ddlist1.ListIndex(-1)
+	Gui.Form1.ddlist1.ClearItems
+	Gui.Form1.ddlist2.ListIndex(-1)
+	Gui.Form1.ddlist2.ClearItems
+	F.Intrinsic.Control.CallSub("Clearout_chkboxes")
+	Gui.Form1.mltextbox22.Text("")
+	
+	'Run Department Query
+	V.Local.sSQL.Set("Select Distinct WC_DEPT from V_Workcenters where NOT (WC_DEPT = '' or WC_DEPT = 'ENG' or WC_DEPT = 'MISC' or WC_DEPT = 'QA' or WC_DEPT = 'SHIP' or WC_DEPT = 'UNMK') Order by WC_DEPT")
+
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.Intrinsic.UI.Msgbox("No Departments found.")
+	'	F.Intrinsic.Control.CallSub(Unload)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+			Gui.Form1.ddlist0.AddItem(V.ODBC.con!rst.FieldValTrim!WC_DEPT)
+			F.ODBC.con!rst.MoveNext
+		F.Intrinsic.Control.Loop
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+		
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Pop_Dept.End
+
+Program.Sub.Pop_Machine.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	V.Local.WCDept.Declare(String)
+	
+	Gui.Form1.ddlist1.ListIndex(-1)
+	Gui.Form1.ddlist1.ClearItems
+	Gui.Form1.ddlist2.ListIndex(-1)
+	Gui.Form1.ddlist2.ClearItems
+	F.Intrinsic.Control.CallSub("Clearout_chkboxes")
+	Gui.Form1.mltextbox22.Text("")
+	
+	'Exit if no Machine selected
+	F.Intrinsic.Control.If(V.Screen.Form1!ddlist0.Text,=,"")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	V.Local.WCDept.Set(V.Screen.Form1!ddlist0.Text)
+	
+	'Run Machine Query
+	F.Intrinsic.String.Concat("Select Distinct MACHINE from V_Workcenters where WC_DEPT = '",V.Local.WCDept,"' Order by MACHINE",V.Local.sSQL)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.Intrinsic.UI.Msgbox("No Machines found.","Warning")
+	'	F.Intrinsic.Control.CallSub(Unload)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+			Gui.Form1.ddlist1.AddItem(V.ODBC.con!rst.FieldValTrim!Machine)
+			F.ODBC.con!rst.MoveNext
+		F.Intrinsic.Control.Loop
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Pop_Machine.End
+
+Program.Sub.Pop_Freq.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	V.Local.sMachine.Declare(String)
+	V.Local.sMachine.Set(V.Screen.Form1!ddlist1.Text)
+	
+	Gui.Form1.ddlist2.ListIndex(-1)
+	Gui.Form1.ddlist2.ClearItems
+	F.Intrinsic.Control.CallSub("Clearout_chkboxes")
+	Gui.Form1.mltextbox22.Text("")
+	Gui.Form1.chk_NoUse.Value("0")
+	Gui.Form1.chk_NoUse.Visible(False)
+	
+	'Exit if no Time selected
+	F.Intrinsic.Control.If(V.Screen.Form1!ddlist0.Text,=,"")
+		F.Intrinsic.UI.Msgbox("Select Department.","Selection Needed")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.ElseIf(V.Screen.Form1!ddlist1.Text,=,"")
+		F.Intrinsic.UI.Msgbox("Select Machine.","Selection Needed")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	'Run Frequency Query
+	F.Intrinsic.String.Concat("Select Distinct Frequency from GAB_6204_Prev_Maint_Tbl Where Machine = '",V.Local.sMachine,"'",V.Local.sSQL)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.Intrinsic.UI.Msgbox("No Maintenance Found.","Warning")
+	
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+			Gui.Form1.ddlist2.AddItem(V.ODBC.con!rst.FieldValTrim!Frequency)
+			F.ODBC.con!rst.MoveNext
+		F.Intrinsic.Control.Loop
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Pop_Freq.End
+
+Program.Sub.Pop_Chk_Boxes.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	V.Local.sSQL.Declare(String)
+	V.Local.iCount.Declare(Long)
+	V.Local.sCheckBox.Declare(String)
+	V.Local.Machine.Declare(String)
+	V.Local.Freq.Declare(String)
+	V.local.bRet.Declare(Boolean)
+	
+	F.Intrinsic.Control.If(V.Screen.Form1!ddlist0.Text,=,"")
+	'	F.Intrinsic.UI.Msgbox("Select Department.")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.ElseIf(V.Screen.Form1!ddlist1.Text,=,"")
+	'	F.Intrinsic.UI.Msgbox("Select Machine.")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.ElseIf(V.Screen.Form1!ddlist2.Text,=,"")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	V.Local.Machine.Set(V.Screen.Form1!ddlist1.Text)
+	V.Local.Freq.Set(V.Screen.Form1!ddlist2.Text)
+	
+	Gui.Form1.chk_NoUse.Value(0)
+	Gui.Form1.chk_NoUse.Visible(False)
+	
+	'Run Task List Query
+	V.Local.iCount.Set("0")
+	F.Intrinsic.Control.CallSub("Clearout_chkboxes")
+	
+	F.Intrinsic.String.Concat("Select Distinct Task from GAB_6204_Prev_Maint_Tbl where Machine = '",V.Local.Machine,"' and Frequency = '",V.Local.Freq,"'",V.Local.sSQL)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.Intrinsic.UI.Msgbox("No Tasks found.")
+	'	Gui.Form1.ddlist1.Text("")
+		Gui.Form1.ddlist2.ListIndex(-1)
+		Gui.Form1.ddlist2.ClearItems
+		F.Intrinsic.Control.CallSub("Clearout_chkboxes")
+		Gui.Form1.mltextbox22.Text("")
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+			F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	'		F.Intrinsic.String.Concat("Gui.Form1.checkbox",V.Local.iCount,".Caption(V.ODBC.con!rst.FieldValTrim!Task)",V.Local.sCheckBox)
+				F.Intrinsic.Control.If(V.Local.iCount,=,1)
+					Gui.Form1.checkbox1.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox1.Visible(True)
+	'				Gui.Form1.checkbox1.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,2)
+					Gui.Form1.checkbox2.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox2.Visible(True)
+	'				Gui.Form1.checkbox2.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,3)
+					Gui.Form1.checkbox3.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox3.Visible(True)
+	'				Gui.Form1.checkbox3.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,4)
+					Gui.Form1.checkbox4.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox4.Visible(True)
+	'				Gui.Form1.checkbox4.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,5)
+					Gui.Form1.checkbox5.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox5.Visible(True)
+	'				Gui.Form1.checkbox5.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,6)
+					Gui.Form1.checkbox6.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox6.Visible(True)
+	'				Gui.Form1.checkbox6.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,7)
+					Gui.Form1.checkbox7.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox7.Visible(True)
+	'				Gui.Form1.checkbox7.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,8)
+					Gui.Form1.checkbox8.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox8.Visible(True)
+	'				Gui.Form1.checkbox8.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,9)
+					Gui.Form1.checkbox9.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox9.Visible(True)
+	'				Gui.Form1.checkbox9.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,10)
+					Gui.Form1.checkbox10.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox10.Visible(True)
+	'				Gui.Form1.checkbox10.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,11)
+					Gui.Form1.checkbox11.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox11.Visible(True)
+	'				Gui.Form1.checkbox11.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,12)
+					Gui.Form1.checkbox12.Caption(V.ODBC.con!rst.FieldValTrim!Task)
+					Gui.Form1.checkbox12.Visible(True)
+	'				Gui.Form1.checkbox12.SetInternationalID(V.Local.iCount)
+				F.Intrinsic.Control.EndIf
+			F.ODBC.con!rst.MoveNext
+		F.Intrinsic.Control.Loop
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+	
+	F.Intrinsic.Control.If(V.Local.Freq,=,"Daily")
+		F.Intrinsic.Control.CallSub(Daily_chk_boxes)
+	F.Intrinsic.Control.ElseIf(V.Local.Freq,=,"Weekly")
+		F.Intrinsic.Control.CallSub(Weekly_chk_boxes)
+	F.Intrinsic.Control.ElseIf(V.Local.Freq,=,"Monthly")
+		F.Intrinsic.Control.CallSub(Monthly_chk_boxes)
+	F.Intrinsic.Control.ElseIf(V.Local.Freq,=,"Quarterly")
+		F.Intrinsic.Control.CallSub(Quarterly_chk_boxes)
+	F.Intrinsic.Control.ElseIf(V.Local.Freq,=,"Semi-Annually")
+		F.Intrinsic.Control.CallSub(Semiannual_chk_boxes)
+	F.Intrinsic.Control.ElseIf(V.Local.Freq,=,"Annually")
+		F.Intrinsic.Control.CallSub(Annual_chk_boxes)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Pop_Chk_Boxes.End
+
+Program.Sub.Pop_Type.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	Gui.Form2.ddlist1.ListIndex(-1)
+	Gui.Form2.ddlist1.ClearItems
+	Gui.Form2.ddlist2.ListIndex(-1)
+	Gui.Form2.ddlist2.ClearItems
+	Gui.Form2.ddlist3.ListIndex(-1)
+	Gui.Form2.ddlist3.ClearItems
+	Gui.Form2.ddlist4.ListIndex(-1)
+	Gui.Form2.ddlist4.ClearItems
+	
+	Gui.Form2.ddlist1.AddItem("Machinist")
+	Gui.Form2.ddlist1.AddItem("Maint. Department")
+	
+'	Gui.Form2.ddlist1.Text("Machinist")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Pop_Type.End
+
+Program.Sub.Pop_Depart.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	
+	'Gui.Form2.ddlist1.Text("")
+	'Gui.Form2.ddlist1.ClearItems
+	Gui.Form2.ddlist2.ListIndex(-1)
+	Gui.Form2.ddlist2.ClearItems
+	Gui.Form2.ddlist3.ListIndex(-1)
+	Gui.Form2.ddlist3.ClearItems
+	Gui.Form2.ddlist4.ListIndex(-1)
+	Gui.Form2.ddlist4.ClearItems
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	'Run Department Query
+	V.Local.sSQL.Set("Select Distinct WC_DEPT from V_Workcenters where NOT (WC_DEPT = '' or WC_DEPT = 'ENG' or WC_DEPT = 'MISC' or WC_DEPT = 'QA' or WC_DEPT = 'SHIP' or WC_DEPT = 'UNMK') Order by WC_DEPT")
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.Intrinsic.UI.Msgbox("No Departments found.")
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+			Gui.Form2.ddlist2.AddItem(V.ODBC.con!rst.FieldValTrim!WC_DEPT)
+			F.ODBC.con!rst.MoveNext
+		F.Intrinsic.Control.Loop
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")	
+	
+	F.Intrinsic.Control.ExitSub				
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Pop_Depart.End
+
+Program.Sub.Pop_Mach_M.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	V.Local.WCDept.Declare(String)
+	
+	'Gui.Form2.ddlist1.Text("")
+	'Gui.Form2.ddlist1.ClearItems
+	'Gui.Form2.ddlist2.Text("")
+	'Gui.Form2.ddlist2.ClearItems
+	Gui.Form2.ddlist3.ListIndex(-1)
+	Gui.Form2.ddlist3.ClearItems
+	Gui.Form2.ddlist4.ListIndex(-1)
+	Gui.Form2.ddlist4.ClearItems
+	
+	'exit if no Machine selected
+	F.Intrinsic.Control.If(V.Screen.Form2!ddlist2.Text,=,"")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	V.Local.WCDept.Set(V.Screen.Form2!ddlist2.Text)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	'Run Machine Query
+	F.Intrinsic.String.Concat("Select Distinct MACHINE from V_Workcenters where WC_DEPT = '",V.Local.WCDept,"' Order by MACHINE",V.Local.sSQL)
+	
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.Intrinsic.UI.Msgbox("No Machines found.","Warning")
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+			Gui.Form2.ddlist3.AddItem(V.ODBC.con!rst.FieldValTrim!Machine)
+			F.ODBC.con!rst.MoveNext
+		F.Intrinsic.Control.Loop
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")	
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Pop_Mach_M.End
+
+Program.Sub.Pop_Freq_M.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	Gui.Form2.ddlist4.ListIndex(-1)
+	Gui.Form2.ddlist4.ClearItems
+	
+	F.Intrinsic.Control.If(V.Screen.Form2!ddlist2.Text,=,"")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	Gui.Form2.ddlist4.AddItem("Daily")
+	Gui.Form2.ddlist4.AddItem("Weekly")
+	Gui.Form2.ddlist4.AddItem("Monthly")
+	Gui.Form2.ddlist4.AddItem("Quarterly")
+	Gui.Form2.ddlist4.AddItem("Semi-Annually")
+	Gui.Form2.ddlist4.AddItem("Annually")
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Pop_Freq_M.End
+
+Program.Sub.data_Load.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.iCount.Declare(Long)
+	V.Local.sSQL.Declare(String)
+	
+	F.Intrinsic.Control.CallSub(Cmd_clear)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	F.Intrinsic.String.Concat("Select * From GAB_6204_Prev_Maint_Tbl where Machine = '",V.Screen.Form2!ddlist3.Text,"' and Frequency = '",V.Screen.Form2!ddlist4.Text,"' and Type = '",V.Screen.Form2!ddlist1.Text,"'",V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRO("rst",V.Local.sSQL)
+	V.Local.iCount.Set(0)
+	
+	F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+		F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+			Gui.Form2.flexgrid1.TextMatrix(0,V.Local.iCount,V.ODBC.con!rst.FieldValTrim!Task)
+			Gui.Form2.flexgrid1.ApplyStyle(V.Local.iCount,1)
+		F.ODBC.con!rst.MoveNext
+	F.Intrinsic.Control.Loop
+	F.ODBC.Con!rst.close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+	
+	Gui.Form2.flexgrid1.FixedRows(1)
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.data_Load.End
+
+Program.Sub.Cmd_SelectAll.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	Gui.Form1.checkbox1.Value(1)
+	Gui.Form1.checkbox2.Value(1)
+	Gui.Form1.checkbox3.Value(1)
+	Gui.Form1.checkbox4.Value(1)
+	Gui.Form1.checkbox5.Value(1)
+	Gui.Form1.checkbox6.Value(1)
+	Gui.Form1.checkbox7.Value(1)
+	Gui.Form1.checkbox8.Value(1)
+	Gui.Form1.checkbox9.Value(1)
+	Gui.Form1.checkbox10.Value(1)
+	Gui.Form1.checkbox11.Value(1)
+	Gui.Form1.checkbox12.Value(1)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Cmd_SelectAll.End
+
+Program.Sub.Cmd_ClearAll.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	Gui.Form1.checkbox1.Value(0)
+	Gui.Form1.checkbox2.Value(0)
+	Gui.Form1.checkbox3.Value(0)
+	Gui.Form1.checkbox4.Value(0)
+	Gui.Form1.checkbox5.Value(0)
+	Gui.Form1.checkbox6.Value(0)
+	Gui.Form1.checkbox7.Value(0)
+	Gui.Form1.checkbox8.Value(0)
+	Gui.Form1.checkbox9.Value(0)
+	Gui.Form1.checkbox10.Value(0)
+	Gui.Form1.checkbox11.Value(0)
+	Gui.Form1.checkbox12.Value(0)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Cmd_ClearAll.End
+
+Program.Sub.Cmd_Process.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	V.Local.sSQL1.Declare(String)
+	V.Local.bChkBox.Declare(Boolean)
+	V.Local.iCount.Declare(Long)
+	V.Local.sChkBxVal.Declare(String)
+	V.Local.sRet.Declare(String)
+	
+	'Check for data in drop-downs
+	F.Intrinsic.Control.If(V.Screen.Form1!ddlist0.Text,=,"")
+		F.Intrinsic.UI.Msgbox("Select Department.")
+	F.Intrinsic.Control.ElseIf(V.Screen.Form1!ddlist1.Text,=,"")
+		F.Intrinsic.UI.Msgbox("Select Machine.")
+	F.Intrinsic.Control.ElseIf(V.Screen.Form1!ddlist2.Text,=,"")
+		F.Intrinsic.UI.Msgbox("Select Frequency.")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.Screen.Form1!ddlist2.Text,=,"Daily")
+		V.Local.dDate.Declare(Date)
+		V.Local.sDate.Declare(String)
+		V.Local.sYear.Declare(String)
+		V.Local.sMonth.Declare(String)
+		V.Local.sDay.Declare(String)
+		
+		V.Local.dDate.Set(V.Screen.Form1!datepicker1.Value)
+'		F.Intrinsic.String.DateString(V.Local.dDate,V.Local.sDate)
+		F.Intrinsic.Date.Year(V.Local.dDate,V.Local.sYear)
+		F.Intrinsic.Date.Month(V.Local.dDate,V.Local.sMonth)
+		F.Intrinsic.Date.Day(V.Local.dDate,V.Local.sday)
+'		F.Intrinsic.String.Left(V.Local.sDate,4,V.Local.sYear)
+'		F.Intrinsic.String.Mid(V.Local.sDate,5,2,V.Local.sMonth)
+'		F.Intrinsic.String.Right(V.Local.sDate,2,V.Local.sDay)
+'		F.Intrinsic.String.Concat("",V.Local.sYear,"-",V.Local.sMonth,"-",V.Local.sDay,"",V.Local.sDate)
+		F.Intrinsic.String.Build("{0}-{1}-{2}",V.Local.sYear,V.Local.sMonth,V.Local.sDay,V.Local.sDate)
+	
+			F.Intrinsic.String.Concat("SELECT * FROM GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date = '",V.Local.sDate,"'",V.Local.sSql)
+			F.Intrinsic.Control.CallSub("Connection_Open")
+			F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Local.sRet)
+	'		F.ODBC.Connection!con.OpenRecordsetRW("rst",V.Local.sSQL)
+				F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+	'			F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,<>,True)
+					F.Intrinsic.String.Concat("DELETE From GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date = '",V.Local.sDate,"'",V.Local.sSql1)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL1)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.CallSub("Connection_Close")
+	
+	F.Intrinsic.Control.ElseIf(V.Screen.Form1!ddlist2.Text,=,"Weekly")
+		V.Local.dStartDate.Declare(Date)
+		V.Local.dEndDate.Declare(Date)
+		V.Local.sStartDate.Declare(String)
+		V.Local.sEndDate.Declare(String)
+	
+		V.Local.dStartDate.Set(V.Screen.Form1!datepicker1.Value)
+		F.Intrinsic.Date.BeginningOfWeek(V.Local.dStartDate,V.Local.dStartDate)
+		F.Intrinsic.Date.Year(V.Local.dStartDate,V.Local.sYear)
+		F.Intrinsic.Date.Month(V.Local.dStartDate,V.Local.sMonth)
+		F.Intrinsic.Date.Day(V.Local.dStartDate,V.Local.sday)
+		F.Intrinsic.String.Build("{0}-{1}-{2}",V.Local.sYear,V.Local.sMonth,V.Local.sDay,V.Local.sStartDate)
+
+		V.Local.dEndDate.Set(V.Screen.Form1!datepicker1.Value)
+		F.Intrinsic.Date.EndOfWeek(V.Local.dEndDate,V.Local.dEndDate)
+		F.Intrinsic.Date.Year(V.Local.dEndDate,V.Local.sYear)
+		F.Intrinsic.Date.Month(V.Local.dEndDate,V.Local.sMonth)
+		F.Intrinsic.Date.Day(V.Local.dEndDate,V.Local.sday)
+		F.Intrinsic.String.Build("{0}-{1}-{2}",V.Local.sYear,V.Local.sMonth,V.Local.sDay,V.Local.sEndDate)
+		
+			F.Intrinsic.String.Concat("SELECT * FROM GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSql)
+			F.Intrinsic.Control.CallSub("Connection_Open")
+			F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSql,V.Local.sRet)
+	'		F.ODBC.Connection!con.OpenRecordsetRW("rst",V.Local.sSQL)
+				F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+	'			F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,<>,True)
+					F.Intrinsic.String.Concat("DELETE From GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSql1)
+					F.ODBC.Connection!con.Execute(V.Local.sSql1)
+			'		F.ODBC.con!rst.Close
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.CallSub("Connection_Close")
+	
+	F.Intrinsic.Control.ElseIf(V.Screen.Form1!ddlist2.Text,=,"Monthly")
+		F.Intrinsic.Date.BeginningOfMonth(V.Screen.Form1!datepicker1.Value,V.Local.dStartDate)
+		F.Intrinsic.String.DateString(V.Local.dStartDate,V.Local.sStartDate)
+		F.Intrinsic.Date.Year(V.Local.dStartDate,V.Local.sYear)
+		F.Intrinsic.Date.Month(V.Local.dStartDate,V.Local.sMonth)
+		F.Intrinsic.Date.Day(V.Local.dStartDate,V.Local.sday)
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-",V.Local.sMonth,"-",V.Local.sDay,"",V.Local.sStartDate)
+	
+		F.Intrinsic.Date.EndOfMonth(V.Screen.Form1!datepicker1.Value,V.Local.dEndDate)
+		F.Intrinsic.String.Left(V.Local.dEndDate,4,V.Local.sYear)
+		F.Intrinsic.String.Mid(V.Local.dEndDate,5,2,V.Local.sMonth)
+		F.Intrinsic.String.Right(V.Local.dEndDate,2,V.Local.sDay)
+		F.Intrinsic.String.Build("{0}-{1}-{2}",V.Local.sYear,V.Local.sMonth,V.Local.sDay,V.Local.sEndDate)
+	
+			F.Intrinsic.String.Concat("SELECT * FROM GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSql)
+			F.Intrinsic.Control.CallSub("Connection_Open")
+			F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Local.sRet)
+	'		F.ODBC.Connection!con.OpenRecordsetRW("rst",V.Local.sSQL)
+				F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+	'			F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,<>,True)
+					F.Intrinsic.String.Concat("DELETE From GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSql1)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL1)
+			'		F.ODBC.con!rst.Close
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.CallSub("Connection_Close")
+	
+	F.Intrinsic.Control.ElseIf(V.Screen.Form1!ddlist2.Text,=,"Quarterly")
+		F.Intrinsic.Date.BeginningOfMonth(V.Screen.Form1!datepicker1.Value,V.Local.dStartDate)
+		F.Intrinsic.String.DateString(V.Local.dStartDate,V.Local.sStartDate)
+	
+		F.Intrinsic.Date.Year(V.Local.dStartDate,V.Local.sYear)
+		F.Intrinsic.Date.Month(V.Local.dStartDate,V.Local.sMonth)
+	
+		F.Intrinsic.Control.If(V.Local.sMonth,<=,3)
+		'	V.Local.sQuarter.Set("1")
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-01-01",V.Local.sStartDate)
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-03-31",V.Local.sEndDate)
+		F.Intrinsic.Control.ElseIf(V.Local.sMonth,>=,4)
+		F.Intrinsic.Control.AndIf(V.Local.sMonth,<=,6)
+		'	V.Local.sQuarter.Set("2")
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-04-01",V.Local.sStartDate)
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-06-30",V.Local.sEndDate)
+		F.Intrinsic.Control.ElseIf(V.Local.sMonth,>=,7)
+		F.Intrinsic.Control.AndIf(V.Local.sMonth,<=,9)
+		'	V.Local.sQuarter.Set("3")
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-07-01",V.Local.sStartDate)
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-09-30",V.Local.sEndDate)
+		F.Intrinsic.Control.ElseIf(V.Local.sMonth,>=,10)
+		'	V.Local.sQuarter.Set("4")
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-10-01",V.Local.sStartDate)
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-12-31",V.Local.sEndDate)
+		F.Intrinsic.Control.EndIf
+	
+			F.Intrinsic.String.Concat("SELECT * FROM GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSql)
+			F.Intrinsic.Control.CallSub("Connection_Open")
+			F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Local.sRet)
+	'		F.ODBC.Connection!con.OpenRecordsetRW("rst",V.Local.sSQL)
+				F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+	'			F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,<>,True)
+					F.Intrinsic.String.Concat("DELETE From GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSql1)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL1)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.CallSub("Connection_Close")
+	
+	F.Intrinsic.Control.ElseIf(V.Screen.Form1!ddlist2.Text,=,"Semi-Annually")
+		F.Intrinsic.Date.BeginningOfMonth(V.Screen.Form1!datepicker1.Value,V.Local.dStartDate)
+		F.Intrinsic.String.DateString(V.Local.dStartDate,V.Local.sStartDate)
+	
+		F.Intrinsic.String.Mid(V.Local.sStartDate,5,2,V.Local.sMonth)
+		F.Intrinsic.String.Left(V.Local.sStartDate,4,V.Local.sYear)
+	
+		F.Intrinsic.Control.If(V.Local.sMonth,<=,6)
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-01-01",V.Local.sStartDate)
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-06-30",V.Local.sEndDate)
+		F.Intrinsic.Control.ElseIf(V.Local.sMonth,>=,7)
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-07-01",V.Local.sStartDate)
+			F.Intrinsic.String.Concat("",V.Local.sYear,"-12-31",V.Local.sEndDate)
+		F.Intrinsic.Control.EndIf
+	
+			F.Intrinsic.String.Concat("SELECT * FROM GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSql)
+			F.Intrinsic.Control.CallSub("Connection_Open")
+			F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Local.sRet)
+	'		F.ODBC.Connection!con.OpenRecordsetRW("rst",V.Local.sSQL)
+				F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+	'			F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,<>,True)
+					F.Intrinsic.String.Concat("DELETE From GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSql1)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL1)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.CallSub("Connection_Close")
+	
+	F.Intrinsic.Control.ElseIf(V.Screen.Form1!ddlist2.Text,=,"Annually")
+		F.Intrinsic.Date.BeginningOfMonth(V.Screen.Form1!datepicker1.Value,V.Local.dStartDate)
+		F.Intrinsic.String.DateString(V.Local.dStartDate,V.Local.sStartDate)
+	
+		F.Intrinsic.String.Left(V.Local.sStartDate,4,V.Local.sYear)
+	
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-01-01",V.Local.sStartDate)
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-12-31",V.Local.sEndDate)
+	
+			F.Intrinsic.String.Concat("SELECT * FROM GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSql)
+			F.Intrinsic.Control.CallSub("Connection_Open")
+			F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Local.sRet)
+	'		F.ODBC.Connection!con.OpenRecordsetRW("rst",V.Local.sSQL)
+				F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+	'			F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,<>,True)
+					F.Intrinsic.String.Concat("DELETE From GAB_6204_Prev_Maint_Dtl WHERE Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSql1)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL1)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.CallSub("Connection_Close")
+	
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub("Save_to_table")
+	'F.ODBC.con!rst.Close
+	
+	F.Intrinsic.UI.Msgbox("Information Saved","Saved")
+	F.Intrinsic.Control.CallSub(Reset)
+'	F.Intrinsic.Control.CallSub(Main)
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+
+Program.Sub.Cmd_Process.End
+
+Program.Sub.cmd_Clear.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	Gui.Form2.flexgrid1.ClearMetaData
+	
+	Gui.Form2.flexgrid1.TextMatrix(0,1,"")
+	Gui.Form2.flexgrid1.TextMatrix(0,2,"")
+	Gui.Form2.flexgrid1.TextMatrix(0,3,"")
+	Gui.Form2.flexgrid1.TextMatrix(0,4,"")
+	Gui.Form2.flexgrid1.TextMatrix(0,5,"")
+	Gui.Form2.flexgrid1.TextMatrix(0,6,"")
+	Gui.Form2.flexgrid1.TextMatrix(0,7,"")
+	Gui.Form2.flexgrid1.TextMatrix(0,8,"")
+	Gui.Form2.flexgrid1.TextMatrix(0,9,"")
+	Gui.Form2.flexgrid1.TextMatrix(0,10,"")
+	Gui.Form2.flexgrid1.TextMatrix(0,11,"")
+	Gui.Form2.flexgrid1.TextMatrix(0,12,"")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.cmd_Clear.End
+
+Program.Sub.cmd_Ok.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	F.Intrinsic.Control.If(V.Screen.Form2!ddlist2.Text,=,"")
+		F.Intrinsic.UI.Msgbox("Select Department","Missing data")
+	F.Intrinsic.Control.ElseIf(V.Screen.Form2!ddlist3.Text,=,"")
+		F.Intrinsic.UI.Msgbox("Select Machine","Missing data")
+	F.Intrinsic.Control.ElseIf(V.Screen.Form2!ddlist4.Text,=,"")
+		F.Intrinsic.UI.Msgbox("Select Frequency","Missing data")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub("Data_Save")
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.cmd_Ok.End
+
+Program.Sub.Data_Save.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	V.Local.sSQL1.Declare(String)
+	V.Local.iCount.Declare(Long)
+	V.Local.iRow.Declare(Long)
+	V.Local.sHold.Declare(String)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	F.Intrinsic.String.Concat("Select * From GAB_6204_Prev_Maint_Tbl where Type = '",V.Screen.Form2!ddlist1.Text,"' and Machine = '",V.Screen.Form2!ddlist3.Text,"' and Frequency = '",V.Screen.Form2!ddlist4.Text,"'",V.Local.sSQL)
+			F.ODBC.Connection!con.OpenRecordsetRW("rst",V.Local.sSQL)
+				F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,<>,True)
+					F.Intrinsic.String.Concat("DELETE From GAB_6204_Prev_Maint_Tbl where Type = '",V.Screen.Form2!ddlist1.Text,"' and Machine = '",V.Screen.Form2!ddlist3.Text,"' and Frequency = '",V.Screen.Form2!ddlist4.Text,"'",V.Local.sSql1)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL1)
+	'				F.ODBC.con!rst.Close
+				F.Intrinsic.Control.EndIf
+			F.ODBC.con!rst.Close
+		
+	Gui.Form2.flexgrid1.commit
+	
+	F.Intrinsic.Math.Sub(V.Screen.Form2!flexgrid1.Rows,1,V.Local.iRow)
+	'
+	F.Intrinsic.Control.For(V.Local.iCount,1,V.Local.iRow,1)
+	
+	F.Intrinsic.String.Concat("Select * From GAB_6204_Prev_Maint_Tbl where Type = '",V.Screen.Form2!ddlist1.Text,"' and Machine = '",V.Screen.Form2!ddlist3.Text,"' and Frequency = '",V.Screen.Form2!ddlist4.Text,"' Order by Task",V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRW("rst",V.Local.sSQL)
+		V.Local.iCount.Set(0)
+	F.Intrinsic.Control.DoUntil(V.Local.iCount,=,12)
+		F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	'		V.Local.sHold.Set(Gui.Form2.Flexgrid1.TextMatrix)
+			Gui.Form2.flexgrid1.GetTextMatrix(0,V.Local.iCount,V.Local.sHold.Trim)
+			F.Intrinsic.Control.If(V.Local.sHold.Trim,<>,"")
+				F.ODBC.con!rst.AddNew
+				F.ODBC.con!rst.Set!Type(V.Screen.Form2!ddlist1.Text)
+				F.ODBC.con!rst.Set!Machine(V.Screen.Form2!ddlist3.Text)
+				F.ODBC.con!rst.Set!Frequency(V.Screen.Form2!ddlist4.Text)
+	'				Gui.Form2.flexgrid1.GetTextMatrix(0,V.Local.iCount,V.Local.sHold.Trim)
+	'			Gui.Form2.flexgrid1.TextMatrix(0,V.Local.iCount,V.ODBC.con!rst.FieldValTrim!Task)
+				F.ODBC.con!rst.Set!Task(V.Local.sHold.Trim)
+	'			Gui.Form2.flexgrid1.ApplyStyle(V.Local.iCount,1)
+			F.ODBC.con!rst.Update
+				F.ODBC.con!rst.MoveNext
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Loop
+	F.ODBC.Con!rst.close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+	
+	F.Intrinsic.UI.Msgbox("Save Complete")
+	
+	F.Intrinsic.Control.CallSub("Reset_M")
+	
+	'Gui.Form2.flexgrid1.FixedRows(1)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Data_Save.End
+
+Program.Sub.Daily_Chk_Boxes.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Global.sSQL.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iCount.Declare(Long)
+	V.Local.sMachine.Declare(String)
+	V.Local.Freq.Declare(String)
+	V.Local.sComment.Declare(String)
+	V.Local.dDate.Declare(Date)
+	V.Local.sDate.Declare(String)
+	V.Local.sYear.Declare(String)
+	V.Local.sMonth.Declare(String)
+	V.Local.sDay.Declare(String)
+	
+	V.Local.sMachine.Set(V.Screen.Form1!ddlist1.Text)
+	V.Local.Freq.Set(V.Screen.Form1!ddlist2.Text)
+	V.Local.iCount.Set("0")
+	
+	V.Local.dDate.Set(V.Screen.Form1!datepicker1.Value)
+	F.Intrinsic.String.DateString(V.Local.dDate,V.Local.sDate)
+	F.Intrinsic.String.Left(V.Local.sDate,4,V.Local.sYear)
+	F.Intrinsic.String.Mid(V.Local.sDate,5,2,V.Local.sMonth)
+	F.Intrinsic.String.Right(V.Local.sDate,2,V.Local.sDay)
+	F.Intrinsic.String.Concat("",V.Local.sYear,"-",V.Local.sMonth,"-",V.Local.sDay,"",V.Local.sDate)
+	
+	Gui.Form1.chk_NoUse.Visible(True)
+	
+	F.Intrinsic.String.Concat("Select * From GAB_6204_Prev_Maint_Dtl where Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date = '",V.Local.sDate,"'",V.Local.sSQL)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.ODBC.con!rst.Close
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.Else
+		'Check for Not Used Flag
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldVal!Flag_NotUsed,=,"Y")
+			Gui.Form1.chk_NoUse.Value(1)
+			Gui.Form1.chk_NoUse.Visible(True)
+			F.Intrinsic.Control.CallSub("Chkbx_NoUse")
+		F.Intrinsic.Control.Else
+	
+			V.Local.iCount.Set(0)
+			F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+				F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+					F.Intrinsic.Control.If(V.Local.iCount,=,1)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox1.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox1.Value(0)
+						F.Intrinsic.Control.EndIf
+						Gui.Form1.mltextbox22.Text(V.ODBC.con!rst.FieldValTrim!Comment)
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,2)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox2.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox2.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,3)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox3.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox3.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,4)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox4.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox4.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,5)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox5.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox5.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,6)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox6.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox6.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,7)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox7.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox7.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,8)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox8.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox8.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,9)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox9.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox9.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,10)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox10.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox10.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,11)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox11.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox11.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,12)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox12.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox12.Value(0)
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.EndIf
+				F.ODBC.con!rst.MoveNext
+			F.Intrinsic.Control.Loop
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Daily_Chk_Boxes.End
+
+Program.Sub.Weekly_Chk_Boxes.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	V.Local.iCount.Declare(Long)
+	V.Local.sMachine.Declare(String)
+	V.Local.Freq.Declare(String)
+	'V.Local.sCheckBox.Declare(String)
+	'V.Local.iCheckBox.Declare(Long)
+	V.Local.sComment.Declare(String)
+	V.Local.dStartDate.Declare(Date)
+	V.Local.dEndDate.Declare(Date)
+	V.Local.sStartDate.Declare(String)
+	V.Local.sEndDate.Declare(String)
+	V.Local.sYear.Declare(String)
+	V.Local.sMonth.Declare(String)
+	V.Local.sDay.Declare(String)
+	
+	F.Intrinsic.Date.BeginningOfWeek(V.Screen.Form1!datepicker1.Value,V.Local.dStartDate)
+	F.Intrinsic.String.DateString(V.Local.dStartDate,V.Local.sStartDate)
+	F.Intrinsic.String.Left(V.Local.sStartDate,4,V.Local.sYear)
+	F.Intrinsic.String.Mid(V.Local.sStartDate,5,2,V.Local.sMonth)
+	F.Intrinsic.String.Right(V.Local.sStartDate,2,V.Local.sDay)
+	F.Intrinsic.String.Concat("",V.Local.sYear,"-",V.Local.sMonth,"-",V.Local.sDay,"",V.Local.sStartDate)
+	
+	F.Intrinsic.Date.EndOfWeek(V.Screen.Form1!datepicker1.Value,V.Local.dEndDate)
+	F.Intrinsic.String.DateString(V.Local.dEndDate,V.Local.sEndDate)
+	F.Intrinsic.String.Left(V.Local.sEndDate,4,V.Local.sYear)
+	F.Intrinsic.String.Mid(V.Local.sEndDate,5,2,V.Local.sMonth)
+	F.Intrinsic.String.Right(V.Local.sEndDate,2,V.Local.sDay)
+	F.Intrinsic.String.Concat("",V.Local.sYear,"-",V.Local.sMonth,"-",V.Local.sDay,"",V.Local.sEndDate)
+	
+	V.Local.sMachine.Set(V.Screen.Form1!ddlist1.Text)
+	V.Local.Freq.Set(V.Screen.Form1!ddlist2.Text)
+	V.Local.iCount.Set("0")
+	
+	Gui.Form1.chk_NoUse.Visible(True)
+	
+	F.Intrinsic.String.Concat("Select * From GAB_6204_Prev_Maint_Dtl where Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSQL)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")	
+	
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.ODBC.con!rst.Close
+		F.Intrinsic.Control.CallSub("Connection_Close")
+		F.Intrinsic.Control.ExitSub
+	
+	F.Intrinsic.Control.Else
+		'Check for Not Used Flag
+		F.Intrinsic.Control.If(V.ODBC.con!rst.FieldVal!Flag_NotUsed,=,"Y")
+			Gui.Form1.chk_NoUse.Value(1)
+			Gui.Form1.chk_NoUse.Visible(True)
+			F.Intrinsic.Control.CallSub(Chkbx_NoUse)
+		F.Intrinsic.Control.Else
+	
+			V.Local.iCount.Set(0)
+			F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+				F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	
+					F.Intrinsic.Control.If(V.Local.iCount,=,1)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox1.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox1.Value(0)
+						F.Intrinsic.Control.EndIf
+						Gui.Form1.mltextbox22.Text(V.ODBC.con!rst.FieldValTrim!Comment)
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,2)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox2.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox2.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,3)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox3.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox3.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,4)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox4.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox4.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,5)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox5.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox5.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,6)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox6.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox6.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,7)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox7.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox7.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,8)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox8.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox8.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,9)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox9.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox9.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,10)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox10.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox10.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,11)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox11.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox11.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.ElseIf(V.Local.iCount,=,12)
+						F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+							Gui.Form1.checkbox12.Value(1)
+						F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+							Gui.Form1.checkbox12.Value(0)
+						F.Intrinsic.Control.EndIf
+	
+					F.Intrinsic.Control.EndIf
+				F.ODBC.con!rst.MoveNext
+			F.Intrinsic.Control.Loop
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Weekly_Chk_Boxes.End
+
+Program.Sub.Monthly_Chk_Boxes.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	V.Local.iCount.Declare(Long)
+	V.Local.sMachine.Declare(String)
+	V.Local.Freq.Declare(String)
+	V.Local.sCheckBox.Declare(String)
+	V.Local.iCheckBox.Declare(Long)
+	V.Local.sComment.Declare(String)
+	V.Local.dStartDate.Declare(Date)
+	V.Local.dEndDate.Declare(Date)
+	V.Local.sStartDate.Declare(String)
+	V.Local.sEndDate.Declare(String)
+	V.Local.sYear.Declare(String)
+	V.Local.sMonth.Declare(String)
+	V.Local.sDay.Declare(String)
+	
+	V.Local.sMachine.Set(V.Screen.Form1!ddlist1.Text)
+	V.Local.Freq.Set(V.Screen.Form1!ddlist2.Text)
+	V.Local.iCount.Set("0")
+	
+	F.Intrinsic.Date.BeginningOfMonth(V.Screen.Form1!datepicker1.Value,V.Local.dStartDate)
+	F.Intrinsic.String.DateString(V.Local.dStartDate,V.Local.sStartDate)
+	F.Intrinsic.String.Left(V.Local.sStartDate,4,V.Local.sYear)
+	F.Intrinsic.String.Mid(V.Local.sStartDate,5,2,V.Local.sMonth)
+	F.Intrinsic.String.Right(V.Local.sStartDate,2,V.Local.sDay)
+	F.Intrinsic.String.Concat("",V.Local.sYear,"-",V.Local.sMonth,"-",V.Local.sDay,"",V.Local.sStartDate)
+	
+	F.Intrinsic.Date.EndOfMonth(V.Screen.Form1!datepicker1.Value,V.Local.dEndDate)
+	F.Intrinsic.String.DateString(V.Local.dEndDate,V.Local.sEndDate)
+	F.Intrinsic.String.Left(V.Local.sEndDate,4,V.Local.sYear)
+	F.Intrinsic.String.Mid(V.Local.sEndDate,5,2,V.Local.sMonth)
+	F.Intrinsic.String.Right(V.Local.sEndDate,2,V.Local.sDay)
+	F.Intrinsic.String.Concat("",V.Local.sYear,"-",V.Local.sMonth,"-",V.Local.sDay,"",V.Local.sEndDate)
+	
+	F.Intrinsic.String.Concat("Select * From GAB_6204_Prev_Maint_Dtl where Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSQL)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.ODBC.con!rst.Close
+		F.Intrinsic.Control.CallSub("Connection_Close")
+		F.Intrinsic.Control.ExitSub
+	
+	F.Intrinsic.Control.Else
+	'F.Intrinsic.Control.CallSub(Save_to_table)
+		V.Local.iCount.Set(0)
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+			F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	
+				F.Intrinsic.Control.If(V.Local.iCount,=,1)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox1.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox1.Value(0)
+					F.Intrinsic.Control.EndIf
+					Gui.Form1.mltextbox22.Text(V.ODBC.con!rst.FieldValTrim!Comment)
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,2)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox2.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox2.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,3)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox3.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox3.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,4)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox4.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox4.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,5)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox5.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox5.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,6)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox6.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox6.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,7)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox7.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox7.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,8)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox8.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox8.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,9)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox9.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox9.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,10)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox10.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox10.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,11)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox11.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox11.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,12)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox12.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox12.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.EndIf
+			F.ODBC.con!rst.MoveNext
+		F.Intrinsic.Control.Loop
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Monthly_Chk_Boxes.End
+
+Program.Sub.Quarterly_Chk_Boxes.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	V.Local.iCount.Declare(Long)
+	V.Local.sMachine.Declare(String)
+	V.Local.Freq.Declare(String)
+	V.Local.sComment.Declare(String)
+	V.Local.dStartDate.Declare(Date)
+	V.Local.dEndDate.Declare(Date)
+	V.Local.sStartDate.Declare(String)
+	V.Local.sEndDate.Declare(String)
+	V.Local.sYear.Declare(Long)
+	V.Local.sMonth.Declare(Long)
+	V.Local.sDay.Declare(String)
+	V.Local.sQuarter.Declare(Long)
+	
+	V.Local.sMachine.Set(V.Screen.Form1!ddlist1.Text)
+	V.Local.Freq.Set(V.Screen.Form1!ddlist2.Text)
+	V.Local.iCount.Set("0")
+	
+	F.Intrinsic.Date.BeginningOfMonth(V.Screen.Form1!datepicker1.Value,V.Local.dStartDate)
+	F.Intrinsic.String.DateString(V.Local.dStartDate,V.Local.sStartDate)
+	
+	F.Intrinsic.String.Mid(V.Local.sStartDate,5,2,V.Local.sMonth)
+	F.Intrinsic.String.Left(V.Local.sStartDate,4,V.Local.sYear)
+	
+	F.Intrinsic.Control.If(V.Local.sMonth,<=,3)
+	'	V.Local.sQuarter.Set("1")
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-01-01",V.Local.sStartDate)
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-03-31",V.Local.sEndDate)
+	F.Intrinsic.Control.ElseIf(V.Local.sMonth,>=,4)
+	F.Intrinsic.Control.AndIf(V.Local.sMonth,<=,6)
+	'	V.Local.sQuarter.Set("2")
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-04-01",V.Local.sStartDate)
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-06-30",V.Local.sEndDate)
+	F.Intrinsic.Control.ElseIf(V.Local.sMonth,>=,7)
+	F.Intrinsic.Control.AndIf(V.Local.sMonth,<=,9)
+	'	V.Local.sQuarter.Set("3")
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-07-01",V.Local.sStartDate)
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-09-30",V.Local.sEndDate)
+	F.Intrinsic.Control.ElseIf(V.Local.sMonth,>=,10)
+	'	V.Local.sQuarter.Set("4")
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-10-01",V.Local.sStartDate)
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-12-31",V.Local.sEndDate)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.Concat("Select * From GAB_6204_Prev_Maint_Dtl where Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSQL)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.ODBC.con!rst.Close
+		F.Intrinsic.Control.CallSub("Connection_Close")
+		F.Intrinsic.Control.ExitSub
+	
+	F.Intrinsic.Control.Else
+		V.Local.iCount.Set(0)
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+			F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	
+				F.Intrinsic.Control.If(V.Local.iCount,=,1)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox1.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox1.Value(0)
+					F.Intrinsic.Control.EndIf
+					Gui.Form1.mltextbox22.Text(V.ODBC.con!rst.FieldValTrim!Comment)
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,2)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox2.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox2.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,3)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox3.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox3.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,4)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox4.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox4.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,5)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox5.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox5.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,6)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox6.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox6.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,7)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox7.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox7.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,8)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox8.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox8.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,9)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox9.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox9.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,10)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox10.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox10.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,11)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox11.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox11.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,12)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox12.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox12.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.EndIf
+			F.ODBC.con!rst.MoveNext
+		F.Intrinsic.Control.Loop
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Quarterly_Chk_Boxes.End
+
+Program.Sub.SemiAnnual_Chk_Boxes.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	V.Local.sSQL.Declare(String)
+	V.Local.iCount.Declare(Long)
+	V.Local.sMachine.Declare(String)
+	V.Local.Freq.Declare(String)
+	
+	V.Local.sComment.Declare(String)
+	V.Local.dStartDate.Declare(Date)
+	V.Local.dEndDate.Declare(Date)
+	V.Local.sStartDate.Declare(String)
+	V.Local.sEndDate.Declare(String)
+	V.Local.sYear.Declare(Long)
+	V.Local.sMonth.Declare(Long)
+	V.Local.sDay.Declare(String)
+	
+	V.Local.sMachine.Set(V.Screen.Form1!ddlist1.Text)
+	V.Local.Freq.Set(V.Screen.Form1!ddlist2.Text)
+	V.Local.iCount.Set("0")
+	
+	F.Intrinsic.Date.BeginningOfMonth(V.Screen.Form1!datepicker1.Value,V.Local.dStartDate)
+	F.Intrinsic.String.DateString(V.Local.dStartDate,V.Local.sStartDate)
+	
+	F.Intrinsic.String.Mid(V.Local.sStartDate,5,2,V.Local.sMonth)
+	F.Intrinsic.String.Left(V.Local.sStartDate,4,V.Local.sYear)
+	
+	F.Intrinsic.Control.If(V.Local.sMonth,<=,6)
+	'	V.Local.sQuarter.Set("1")
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-01-01",V.Local.sStartDate)
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-06-30",V.Local.sEndDate)
+	F.Intrinsic.Control.ElseIf(V.Local.sMonth,>=,7)
+	'	V.Local.sQuarter.Set("4")
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-07-01",V.Local.sStartDate)
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-12-31",V.Local.sEndDate)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.Concat("Select * From GAB_6204_Prev_Maint_Dtl where Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSQL)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.ODBC.con!rst.Close
+		F.Intrinsic.Control.CallSub("Connection_Close")
+		F.Intrinsic.Control.ExitSub
+	
+	F.Intrinsic.Control.Else
+	'F.Intrinsic.Control.CallSub(Save_to_table)
+		V.Local.iCount.Set(0)
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+			F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	
+				F.Intrinsic.Control.If(V.Local.iCount,=,1)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox1.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox1.Value(0)
+					F.Intrinsic.Control.EndIf
+					Gui.Form1.mltextbox22.Text(V.ODBC.con!rst.FieldValTrim!Comment)
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,2)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox2.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox2.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,3)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox3.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox3.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,4)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox4.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox4.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,5)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox5.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox5.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,6)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox6.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox6.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,7)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox7.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox7.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,8)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox8.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox8.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,9)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox9.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox9.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,10)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox10.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox10.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,11)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox11.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox11.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,12)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox12.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox12.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.EndIf
+			F.ODBC.con!rst.MoveNext
+		F.Intrinsic.Control.Loop
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.SemiAnnual_Chk_Boxes.End
+
+Program.Sub.Annual_Chk_Boxes.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	V.Local.iCount.Declare(Long)
+	V.Local.sMachine.Declare(String)
+	V.Local.Freq.Declare(String)
+	'V.Local.sCheckBox.Declare(String)
+	'V.Local.iCheckBox.Declare(Long)
+	V.Local.sComment.Declare(String)
+	V.Local.dStartDate.Declare(Date)
+	V.Local.dEndDate.Declare(Date)
+	V.Local.sStartDate.Declare(String)
+	V.Local.sEndDate.Declare(String)
+	V.Local.sYear.Declare(Long)
+	V.Local.sMonth.Declare(Long)
+	V.Local.sDay.Declare(String)
+	'V.Local.sQuarter.Declare(Long)
+	
+	V.Local.sMachine.Set(V.Screen.Form1!ddlist1.Text)
+	V.Local.Freq.Set(V.Screen.Form1!ddlist2.Text)
+	V.Local.iCount.Set("0")
+	
+	F.Intrinsic.Date.BeginningOfMonth(V.Screen.Form1!datepicker1.Value,V.Local.dStartDate)
+	F.Intrinsic.String.DateString(V.Local.dStartDate,V.Local.sStartDate)
+	
+	F.Intrinsic.String.Left(V.Local.sStartDate,4,V.Local.sYear)
+	
+	F.Intrinsic.String.Concat("",V.Local.sYear,"-01-01",V.Local.sStartDate)
+	F.Intrinsic.String.Concat("",V.Local.sYear,"-12-31",V.Local.sEndDate)
+	
+	F.Intrinsic.String.Concat("Select * From GAB_6204_Prev_Maint_Dtl where Machine = '",V.Screen.Form1!ddlist1.Text,"' and Frequency = '",V.Screen.Form1!ddlist2.Text,"' and Date between '",V.Local.sStartDate,"' and '",V.Local.sEndDate,"'",V.Local.sSQL)
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+		F.ODBC.con!rst.Close
+		F.Intrinsic.Control.CallSub("Connection_Close")
+		F.Intrinsic.Control.ExitSub
+	
+	F.Intrinsic.Control.Else
+	'F.Intrinsic.Control.CallSub(Save_to_table)
+		V.Local.iCount.Set(0)
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,=,True)
+			F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	
+				F.Intrinsic.Control.If(V.Local.iCount,=,1)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox1.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox1.Value(0)
+					F.Intrinsic.Control.EndIf
+					Gui.Form1.mltextbox22.Text(V.ODBC.con!rst.FieldValTrim!Comment)
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,2)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox2.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox2.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,3)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox3.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox3.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,4)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox4.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox4.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,5)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox5.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox5.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,6)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox6.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox6.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,7)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox7.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox7.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,8)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox8.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox8.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,9)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox9.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox9.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,10)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox10.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox10.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,11)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox11.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox11.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.ElseIf(V.Local.iCount,=,12)
+					F.Intrinsic.Control.If(V.ODBC.con!rst.FieldValTrim!Flag_Complete,=,"Y")
+						Gui.Form1.checkbox12.Value(1)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rst.FieldValTrim!Flag_Complete,<>,"Y")
+						Gui.Form1.checkbox12.Value(0)
+					F.Intrinsic.Control.EndIf
+	
+				F.Intrinsic.Control.EndIf
+			F.ODBC.con!rst.MoveNext
+		F.Intrinsic.Control.Loop
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Annual_Chk_Boxes.End
+
+Program.Sub.ClearOut_ChkBoxes.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	Gui.Form1.checkbox1.Value(0)
+	Gui.Form1.checkbox1.Visible(False)
+	Gui.Form1.checkbox2.Value(0)
+	Gui.Form1.checkbox2.Visible(False)
+	Gui.Form1.checkbox3.Value(0)
+	Gui.Form1.checkbox3.Visible(False)
+	Gui.Form1.checkbox4.Value(0)
+	Gui.Form1.checkbox4.Visible(False)
+	Gui.Form1.checkbox5.Value(0)
+	Gui.Form1.checkbox5.Visible(False)
+	Gui.Form1.checkbox6.Value(0)
+	Gui.Form1.checkbox6.Visible(False)
+	Gui.Form1.checkbox7.Value(0)
+	Gui.Form1.checkbox7.Visible(False)
+	Gui.Form1.checkbox8.Value(0)
+	Gui.Form1.checkbox8.Visible(False)
+	Gui.Form1.checkbox9.Value(0)
+	Gui.Form1.checkbox9.Visible(False)
+	Gui.Form1.checkbox10.Value(0)
+	Gui.Form1.checkbox10.Visible(False)
+	Gui.Form1.checkbox11.Value(0)
+	Gui.Form1.checkbox11.Visible(False)
+	Gui.Form1.checkbox12.Value(0)
+	Gui.Form1.checkbox12.Visible(False)
+	
+	Gui.Form1.mltextbox22.Text("")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.ClearOut_ChkBoxes.End
+
+Program.Sub.Save_to_Table.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	V.Local.bChkBox.Declare(Boolean)
+	V.Local.iCount.Declare(Long)
+	V.Local.sChkBxVal.Declare(String)
+	V.Local.Machine.Declare(String)
+	V.Local.Freq.Declare(String)
+	V.Local.sSql.Declare(String)
+	V.Local.sComplete.Declare(String)
+	V.Local.sDate.Declare(String)
+	V.Local.sYear.Declare(String)
+	V.Local.sMonth.Declare(String)
+	V.Local.sDay.Declare(String)
+	
+	V.Local.iCount.Set("0")
+	V.Local.Machine.Set(V.Screen.Form1!ddlist1.Text)
+	V.Local.Freq.Set(V.Screen.Form1!ddlist2.Text)
+	
+		F.Intrinsic.String.DateString(V.Screen.Form1!datepicker1.Value,V.Local.sDate)
+		F.Intrinsic.String.Left(V.Local.sDate,4,V.Local.sYear)
+		F.Intrinsic.String.Mid(V.Local.sDate,5,2,V.Local.sMonth)
+		F.Intrinsic.String.Right(V.Local.sDate,2,V.Local.sDay)
+		F.Intrinsic.String.Concat("",V.Local.sYear,"-",V.Local.sMonth,"-",V.Local.sDay,"",V.Local.sDate)
+	
+	F.Intrinsic.Control.If(V.Screen.Form1!chk_NoUse.Value,=,1)
+		F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date,Time, Comment, Flag_NotUsed) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', 'Machine Not Used', '', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"', 'Y')",V.Local.sSql)
+		F.Intrinsic.Control.CallSub("Connection_Open")
+		F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.CallSub("Connection_Close")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub("Connection_Open")
+	'Checkbox 1
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox1.Caption,<>,"")
+			F.Intrinsic.Control.If(V.Screen.Form1!checkbox1.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox1.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+			F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub("Connection_Close")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	'Checkbox 2
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox2.Caption,<>,"")
+			F.Intrinsic.Control.If(V.Screen.Form1!checkbox2.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox2.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+			F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub("Connection_Close")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	'Checkbox 3
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox3.Caption,<>,"")
+			F.Intrinsic.Control.If(V.Screen.Form1!checkbox3.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox3.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+			F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub("Connection_Close")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	'Checkbox 4		
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox4.Caption,<>,"")
+			F.Intrinsic.Control.If(V.Screen.Form1!checkbox1.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox4.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+			F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub("Connection_Close")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	'Checkbox 5
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox5.Caption,<>,"")
+			F.Intrinsic.Control.If(V.Screen.Form1!checkbox5.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+		
+			F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox5.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+			F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub("Connection_Close")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	'Checkbox 6
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox6.Caption,<>,"")
+			F.Intrinsic.Control.If(V.Screen.Form1!checkbox6.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox6.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+			F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub("Connection_Close")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	'Checkbox 7
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox7.Caption,<>,"")
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox7.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+		
+			F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox7.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+			F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub("Connection_Close")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	'Checkbox 8
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox8.Caption,<>,"")
+			F.Intrinsic.Control.If(V.Screen.Form1!checkbox8.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox8.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+			F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub("Connection_Close")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	'Checkbox 9
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox9.Caption,<>,"")
+			F.Intrinsic.Control.If(V.Screen.Form1!checkbox9.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox9.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+		F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	'Checkbox 10
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox10.Caption,<>,"")
+			F.Intrinsic.Control.If(V.Screen.Form1!checkbox10.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox10.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+			F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub("Connection_Close")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	'Checkbox 11
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox11.Caption,<>,"")
+			F.Intrinsic.Control.If(V.Screen.Form1!checkbox11.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox11.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+			F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub("Connection_Close")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	'Checkbox 12
+		F.Intrinsic.Control.If(V.Screen.Form1!checkbox12.Caption,<>,"")
+			F.Intrinsic.Control.If(V.Screen.Form1!checkbox12.Value,=,1)
+				V.Local.sComplete.Set("Y")
+			F.Intrinsic.Control.Else
+				V.Local.sComplete.Set("N")
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Concat("INSERT into GAB_6204_Prev_Maint_Dtl (Type, Dept, Machine, Frequency, Task, Flag_Complete, Date, Time, Comment) VALUES ('",V.Screen.Form1!ddlist4.Text,"', '",V.Screen.Form1!ddlist0.Text,"', '",V.Screen.Form1!ddlist1.Text,"', '",V.Screen.Form1!ddlist2.Text,"', '",V.Screen.Form1!checkbox12.Caption,"', '",V.Local.sComplete,"', '",V.Local.sDate,"', '",V.Ambient.Time,"', '",V.Screen.Form1!mltextbox22.Text,"')",V.Local.sSql)
+			F.ODBC.Connection!con.Execute(V.Local.sSql)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub("Connection_Close")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub("Connection_Close")
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Save_to_Table.End
+
+Program.Sub.Group.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	Gui.Form1.ddlist4.AddItem("Machinist")
+	Gui.Form1.ddlist4.AddItem("Maintenance Depot")
+	
+'	Gui.Form1.ddlist4.Text("Machinist")
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Group.End
+
+Program.Sub.Reset.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	'Clear screan for next selection
+	'Gui.Form1.ddlist0.Text("")
+	Gui.Form1.ddlist0.ListIndex(-1)
+	Gui.Form1.ddlist0.ClearItems
+	Gui.Form1.ddlist1.ListIndex(-1)
+	Gui.Form1.ddlist1.ClearItems
+	Gui.Form1.ddlist2.ListIndex(-1)
+	Gui.Form1.ddlist2.ClearItems
+	Gui.Form1.ddlist4.ListIndex(-1)
+	Gui.Form1.ddlist4.ClearItems
+	
+	F.Intrinsic.Control.CallSub("Clearout_chkboxes")
+	F.Intrinsic.Control.CallSub("Group")
+	F.Intrinsic.Control.CallSub("Pop_dept")
+		
+'	F.Intrinsic.Control.CallSub("Connection_Close")
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Reset.End
+
+Program.Sub.Reset_M.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	'Clear screan for next selection
+	
+	'Gui.Form2
+	Gui.Form2.ddlist1.ListIndex(-1)
+	Gui.Form2.ddlist1.ClearItems
+	Gui.Form2.ddlist1.ListIndex(-1)
+	Gui.Form2.ddlist1.ClearItems
+	Gui.Form2.ddlist2.ListIndex(-1)
+	Gui.Form2.ddlist2.ClearItems
+	Gui.Form2.ddlist4.ListIndex(-1)
+	Gui.Form2.ddlist4.ClearItems
+	
+	F.Intrinsic.Control.CallSub(Cmd_clear)
+	
+'	F.Intrinsic.Control.CallSub(Main)
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Reset_M.End
+
+Program.Sub.Unload.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	F.Intrinsic.UI.CloseWaitDialog
+'	F.Intrinsic.Control.CallSub("Connection_Close")
+	F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Unload.End
+
+Program.Sub.ChkBx_NoUse.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	F.Intrinsic.Control.If(V.Screen.Form1!chk_NoUse.Value,=,0)
+		F.Intrinsic.Control.CallSub("Pop_chk_boxes")
+		Gui.Form1.cmdbutton1.Enabled(True)
+		Gui.Form1.cmdbutton2.Enabled(True)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.CallSub("Clearout_chkboxes")
+		Gui.Form1.cmdbutton1.Enabled(False)
+		Gui.Form1.cmdbutton2.Enabled(False)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.ExitSub
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.ChkBx_NoUse.End
+
+Program.Sub.Connection_Open.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	F.ODBC.Connection!con.OpenConnection(v.Ambient.PDSN,v.Ambient.PUser,v.Ambient.PPass)
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Connection_Open.End
+
+Program.Sub.Connection_Close.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	F.ODBC.Connection!con.Close
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.Connection_Close.End
+
+Program.Sub.Comments.Start
+${$0$}$$}$AndrewD$}$9/29/2015 7:45:32 AM
+Program.Sub.Comments.End
